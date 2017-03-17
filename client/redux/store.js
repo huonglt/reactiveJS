@@ -7,4 +7,4 @@ const cycleMiddleware = createCycleMiddleware();
 
 export const store = createStore(reducers, applyMiddleware(cycleMiddleware));
 
-export const runCycle = (mainFn) => run(mainFn, { ACTION: cycleMiddleware.makeActionDriver()});
+export const runCycleRx = (mainFn) => run(mainFn, { ACTION: cycleMiddleware.makeActionDriver()});
