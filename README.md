@@ -12,7 +12,7 @@ What am I using here:
 
 This app is running in node environment.
 
-I'm using ES6 with node v7 so some babel libraries are required
+To support module import ES 6 in node v7, I'm using babel-plugin-transform-es2015-modules-commonjs
 
 I started with reactive programing from java. And really enjoy it.
 
