@@ -8,7 +8,7 @@ I complete the example above with all the setup required, and clean code.
 
 What am I using here:
 - redux: for state management
-- redux-cycles: for reactive handling of Actions
+- redux-cycles: for reactive handling of Redux Actions
 
 This app is running in node environment.
 
