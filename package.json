@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node client/index.js"
+    "start": "nodemon client/index.js --exec babel-node",
+    "build": "babel client -d dist",
+    "serve": "node dist/index.js"
   },
   "dependencies": {
+    "@cycle/http": "^13.2.0",
     "redux": "^3.6.0",
     "redux-actions": "^1.2.1",
     "redux-cycles": "^0.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0"
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "nodemon": "^1.11.0"
   }
 }
