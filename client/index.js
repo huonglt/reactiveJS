@@ -1,6 +1,6 @@
-import { store, runCycleRx } from './redux/store.js';
-import { PING_ACTION, PONG_ACTION } from './redux/actions.js';
-import { main } from './cycles/main.js';
+import { configStore } from './redux/store.js';
+import { PING_ACTION, PONG_ACTION, REQUEST_USER_REPOS_ACTION } from './redux/actions.js';
 
-runCycleRx(main);
+const store = configStore();
+store.dispatch(REQUEST_USER_REPOS_ACTION);
 store.dispatch(PING_ACTION);
