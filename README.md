@@ -14,6 +14,9 @@ This app is running in node environment.
 
 To support module import ES 6 in node v7, I'm using babel-plugin-transform-es2015-modules-commonjs
 
+To see how reactive RxJs handle asynchronous HTTP request, checkout client/cycles/userRepo.js
+To see how reactive Rxjs handle simple synchronous logic, checkout client/cycles/pingPong.js 
+
 I started with reactive programing from java. And really enjoy it.
 
 ## Prerequisite
